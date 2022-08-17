@@ -1,5 +1,10 @@
+:root {
+    
+}
+
 /*Селектор тега*/
 
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
 }
