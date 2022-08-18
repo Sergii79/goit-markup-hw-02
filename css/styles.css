@@ -30,35 +30,29 @@ body {
 } 
 /*header*/
 .logo {
-    font-family: Raleway; 
-    font-style: Bold;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
     font-size: 26px;
-    line-height: calc(31 / 26);
-    line-height: 100%;
-    align: Left;
-    vertical-align: Top;
-    letter-spacing: 3%;
+    line-height: 31px;    
+    letter-spacing: 0.03em;
 }
 .logo .logo_new {
     color: var(--accent-text-color);
 }
-.logo .logo_end {
+/*.logo .logo_end {
     color: rgba(0, 0, 0, 1);
-}
+}*/
 .header .link:hover,
 .header .link:focus {
    color: var(--accent-text-color);
 }
-.list_item_accent,
-.list_item_accent {
-    color: var(--accent-text-color);
+.list_item_accent {    
+    font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
-    line-height: 100%;
-    align: Left;
-    vertical-align: Top;
-    letter-spacing: 2%;
-    fill: Solid;
+    letter-spacing: 0.02em;
+    color: var(--accent-text-color);
 }
 
 
@@ -68,26 +62,23 @@ body {
 .section_banner {
     background-color: var(--banner-background-color);
 }
-.section_banner_subject {    
+.section_banner_subject {        
+    font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
-    line-height: 116%;    
-    align: Center;
-    vertical align: Top;
-    letter spacing: 6%;    
-    fill: Solid;
-    color: var(--other-text-color);
+    text-align: center;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--other-text-color);    
 }
 .section_banner .button_banner {        
-    fFont-family: inherits: ;
+    font-weight: 700;
     font-size: 16px;
-    line-height: calc(30 / 12 );
-    line-height: 160%;
-    align: Center;
-    vertical-align: Center;
-    letter-spacing: 6%;
-    fill: Solid;
+    line-height: calc(30 / 16);    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     color: var(--other-text-color);
     background-color: var(--accent-background-color);
     cursor: pointer;
