@@ -1,10 +1,113 @@
 :root {
-    
-}
+/* Fonts */  
 
-/*Селектор тега*/
+/* Text collors */
+--title-text-color: rgba(33, 33, 33, 1);
+--secondary-text-color: rgba(117, 117, 117, 1);
+--accent-text-color: rgba(33, 150, 243, 1);
+--other-text-color: rgba(255, 255, 255, 1);
+
+/* Background collors */
+--main-bg-cl: rgba(255, 255, 255, 1);
+--banner-background-color: rgba(47, 48, 58, 1);
+--accent-background-color: rgba(33, 150, 243, 1);
+
+/* Other */
+
+}
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
 }
+/* Селектори класів*/
+
+
+
+.list_item {
+    color: var(--title-text-color);
+
+} 
+/*header*/
+.logo {
+    font-family: Raleway; 
+    font-style: Bold;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    line-height: 100%;
+    align: Left;
+    vertical-align: Top;
+    letter-spacing: 3%;
+}
+.logo .logo_new {
+    color: var(--accent-text-color);
+}
+.logo .logo_end {
+    color: rgba(0, 0, 0, 1);
+}
+.header .link:hover,
+.header .link:focus {
+   color: var(--accent-text-color);
+}
+.list_item_accent,
+.list_item_accent {
+    color: var(--accent-text-color);
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    line-height: 100%;
+    align: Left;
+    vertical-align: Top;
+    letter-spacing: 2%;
+    fill: Solid;
+}
+
+
+
+
+/*Banner*/
+.section_banner {
+    background-color: var(--banner-background-color);
+}
+.section_banner_subject {    
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    line-height: 116%;    
+    align: Center;
+    vertical align: Top;
+    letter spacing: 6%;    
+    fill: Solid;
+    color: var(--other-text-color);
+    text-transform: uppercase;
+}
+.section_banner .button_banner {        
+    fFont-family: inherits: ;
+    font-size: 16px;
+    line-height: calc(30 / 12 );
+    line-height: 160%;
+    align: Center;
+    vertical-align: Center;
+    letter-spacing: 6%;
+    fill: Solid;
+    color: var(--other-text-color);
+    background-color: var(--accent-background-color);
+    cursor: pointer;
+}
+.button_banner:hover {
+    background-color: rgb(22, 106, 175);
+    color: var (-other-text-color);
+}
+.button_banner:focus {
+    background-color: rgb(26, 77, 119);
+    color: var (-other-text-color);
+}
+
+/* reset */
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+.list {
+    list-style: none;
+}
+
+
