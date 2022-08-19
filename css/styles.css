@@ -38,6 +38,7 @@ body {
 /*.logo .logo_end {
     color: rgba(0, 0, 0, 1);
 }*/
+
 .header .link:hover,
 .header .link:focus {
    color: var(--accent-text-color);
@@ -92,8 +93,38 @@ color: var(--accent-text-color);
     color: var (-other-text-color);
 }
 
+/* main content */
+.section_main .section_title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+.section_main .section_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;    
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+/* work, team  */
+.section_work .section_title,
+.section_team .section_title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+/* team */
+.section_team
+
 /* reset */
-.link {
+.link,
+.logo {
     text-decoration: none;
     color: currentColor;
 }
