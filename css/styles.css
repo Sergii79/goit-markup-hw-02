@@ -11,7 +11,8 @@
 --main-bg-cl: rgba(255, 255, 255, 1);
 --banner-background-color: rgba(47, 48, 58, 1);
 --accent-background-color: rgba(33, 150, 243, 1);
-
+--button-hover-background-color: rgb(22, 106, 175);
+--button-focus-background-color: rgb(26, 77, 119);
 /* Other */
 
 }
@@ -22,12 +23,6 @@ body {
 }
 /* Селектори класів*/
 
-
-
-.list_item {
-    color: var(--title-text-color);
-
-} 
 /*header*/
 .logo {
     font-family: 'Raleway';
@@ -47,29 +42,32 @@ body {
 .header .link:focus {
    color: var(--accent-text-color);
 }
-.list_item_accent {    
+.list_item_accent,
+.list_item {    
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    color: var(--accent-text-color);
+    letter-spacing: 0.02em;    
 }
-
-
-
+.list_item_accent {
+color: var(--accent-text-color);
+}
+.list_item {
+    color: var(--title-text-color);
+}
 
 /*Banner*/
 .section_banner {
     background-color: var(--banner-background-color);
+    color: var(--other-text-color);
 }
-.section_banner_subject {        
+.section_banner .section_banner_subject {        
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
     text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--other-text-color);    
+    text-transform: uppercase;       
 }
 .section_banner .button_banner {        
     font-weight: 700;
@@ -78,17 +76,19 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em;      
+    cursor: pointer;      
+}
+.button_banner {
     color: var(--other-text-color);
     background-color: var(--accent-background-color);
-    cursor: pointer;
 }
 .button_banner:hover {
-    background-color: rgb(22, 106, 175);
+    background-color: var(--button-hover-background-color);
     color: var (-other-text-color);
 }
 .button_banner:focus {
-    background-color: rgb(26, 77, 119);
+    background-color: var(--button-focus-background-color);
     color: var (-other-text-color);
 }
 
