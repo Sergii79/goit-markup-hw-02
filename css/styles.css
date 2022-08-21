@@ -20,6 +20,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #F5F5F5;
+    color: var(--secondary-text-color);
 }
 /* Селектори класів*/
 
@@ -29,7 +30,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;    
+    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
 }
 .logo .logo_new {
@@ -51,7 +52,7 @@ body {
     letter-spacing: 0.02em;    
 }
 .list_item_accent {
-color: var(--accent-text-color);
+    color: var(--accent-text-color);
 }
 .list_item {
     color: var(--title-text-color);
@@ -102,19 +103,18 @@ color: var(--accent-text-color);
     text-transform: uppercase;
     color: var(--title-text-color);
 }
-.section_main .section_text {
-    font-weight: 400;
+.section_main .section_text {    
     font-size: 14px;
-    line-height: 24px;    
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    /*color: var(--secondary-text-color);*/
 }
 /* work, team  */
 .section_work .section_title,
 .section_team .section_title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
@@ -125,7 +125,7 @@ color: var(--accent-text-color);
 /* reset */
 .link,
 .logo {
-    text-decoration: none;
+    text-decoration: none !important;
     color: currentColor;
 }
 .list {
